@@ -22,7 +22,7 @@ def find_average(inp):
 
 if __name__ == "__main__":
     lst = []
-    
+
     print("Type enter to stop appending element")
 
     while True:
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     
     avg = find_average(lst)
 
-    if(avg):
+    if (avg):
         print("The average of list is {}".format(avg))
     else:
         print("Invalid input")

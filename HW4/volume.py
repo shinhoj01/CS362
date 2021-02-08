@@ -14,7 +14,7 @@ def find_volume(inp):
 
 if __name__ == "__main__":
     v = find_volume(input("Enter a length of cube: "))
-    if(v != -1):
+    if (v != -1):
         print("The volume of cube is {}".format(v))
     else:
         print("Invalid input")
