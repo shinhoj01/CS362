@@ -1,18 +1,16 @@
-#%%
-def volume(length):
-    # Check if input is numeric
-    if (length.isnumeric()):
-        # Convert input to integer
-        length = int(length)
+# Calculate volume
+def volume(inp):
+    try:
+        length = float(inp)
         volume =  length * length * length
-        print("The volume of cube is {} unit^3".format(volume))
-    else:
-        print("{} is not valid input".format(length))
+        return volume
+        
+    except ValueError:
+        print("Invalid input")
 
-length = input("Enter a length: ")
-volume(length)
-input("Press Enter to exit...")
+v = volume(input("Enter a length of cube: "))
 
-
+if(isinstance(v, float)):
+    print("The volume of cube is {} unit^3".format(v))
 
 # %%
