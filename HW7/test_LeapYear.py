@@ -1,5 +1,5 @@
 import pytest
-import code
+from LeapYear import leapyear
 
 class TestCase:
     def test(self):
@@ -8,5 +8,5 @@ class TestCase:
         otp = ["2000 is a leap year", "2004 is a leap year",
                "1900 is not a leap year", "2003 is not a leap year"]
         # Used map to apply the function to list
-        res = list(map(code, inp))
+        res = list(map(leapyear, inp))
         assert res == otp
