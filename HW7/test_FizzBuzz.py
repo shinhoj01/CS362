@@ -1,5 +1,5 @@
 import pytest
-import code
+from FizzBuzz import fizzbuzz
 
 class TestCase:
     def test(self):
@@ -8,5 +8,5 @@ class TestCase:
         otp = [2,"Fizz","Buzz","Fizz","Buzz","FizzBuzz",
                "Buzz","FizzBuzz","Fizz","Buzz"]
         # Used map to apply the function to list
-        res = list(map(code, inp))
+        res = list(map(fizzbuzz, inp))
         assert res == otp
